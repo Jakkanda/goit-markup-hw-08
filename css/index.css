@@ -79,17 +79,32 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
+  font-family: var(--main-font);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .button {
@@ -524,12 +539,18 @@ img {
   }
 }
 
-.features__list {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.features__list-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+  }
 }
 
 .features__title {
@@ -540,6 +561,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__description {
@@ -550,14 +578,45 @@ img {
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list-item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .features__list-item-background {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list-item-background {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list-item-background {
+    width: 270px;
+  }
 }
 
 .gallery {
