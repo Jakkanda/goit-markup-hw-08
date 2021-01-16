@@ -1,0 +1,21 @@
+@import "utils/visually-hidden";
+@import "utils/variables";
+
+//base
+@import "base/common";
+@import "base/container";
+
+//components
+@import "components/section";
+@import "components/button";
+@import "components/backdrop";
+@import "components/social-links";
+
+//layout
+@import "layout/header";
+@import "layout/hero";
+@import "layout/features";
+@import "layout/gallery";
+@import "layout/team";
+@import "layout/clients";
+@import "layout/footer";
