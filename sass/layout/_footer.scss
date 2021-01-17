@@ -5,6 +5,9 @@
 }
 .address__list {
   padding-top: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .address__list > .address__list-item:not(:last-child) {
@@ -12,6 +15,8 @@
 }
 
 .footer__logo {
+  display: block;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -21,6 +26,10 @@
 
   & > span {
     color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
 
@@ -43,12 +52,24 @@
 }
 
 .footer-wrapper {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    // align-items: baseline;
+  }
 }
 
 .footer__contacts-wrapper {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer__social-list {
@@ -78,12 +99,30 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
 }
 
 .footer__form-wrapper {
-  margin-left: 93px;
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    display: flex;
+    align-items: flex-end;
+
+    // @media screen and (min-width: 1200px) {
+    //   margin-left: 93px;
+    //   display: flex;
+    //   align-items: flex-end;
+    // }
+  }
 }
 
 .footer__mail {
@@ -111,10 +150,16 @@
 }
 
 .footer__btn {
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   height: 50px;
   padding: 10px 28px;
   text-align: start;
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer__btn-wrapper {
@@ -123,6 +168,9 @@
 
 .footer__icon-send {
   position: absolute;
-  top: 13px;
+  top: 34px;
   right: 28px;
+
+  @media screen and(min-width: 1200px) {
+  }
 }

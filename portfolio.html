@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="site-nav">
           <a href="index.html" class="logo"><span>Web</span>Studio</a>
@@ -58,7 +58,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!--Main-->
     <main class="portfolio-main">
       <!--Our examples of work-->
@@ -90,12 +90,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster1.jpg"
-                    alt="Ноутбук с открытой страницей веб-сайта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-1.jpg    1x,
+                        images/portfolio/portfolio-desktop-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-1.jpg    1x,
+                        images/portfolio/portfolio-tablet-1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-1.jpg    1x,
+                        images/portfolio/portfolio-mobile-1@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-1.jpg"
+                      alt="Ноутбук с открытой страницей веб-сайта"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -115,12 +138,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster2.jpg"
-                    alt="Баскетболисты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-2.jpg    1x,
+                        images/portfolio/portfolio-desktop-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-2.jpg    1x,
+                        images/portfolio/portfolio-tablet-2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-2.jpg    1x,
+                        images/portfolio/portfolio-mobile-2@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-2.jpg"
+                      alt="Баскетболисты"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -142,12 +188,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster3.jpg"
-                    alt="Логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-3.jpg    1x,
+                        images/portfolio/portfolio-desktop-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-3.jpg    1x,
+                        images/portfolio/portfolio-tablet-3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-3.jpg    1x,
+                        images/portfolio/portfolio-mobile-3@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-3.jpg"
+                      alt="Логотип ресторана"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -167,12 +236,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-4.jpg    1x,
+                        images/portfolio/portfolio-desktop-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-4.jpg    1x,
+                        images/portfolio/portfolio-tablet-4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-4.jpg    1x,
+                        images/portfolio/portfolio-mobile-4@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-4.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -192,12 +284,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-5.jpg    1x,
+                        images/portfolio/portfolio-desktop-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-5.jpg    1x,
+                        images/portfolio/portfolio-tablet-5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-5.jpg    1x,
+                        images/portfolio/portfolio-mobile-5@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-5.jpg"
+                      alt="Две коробки"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -217,12 +332,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster6.jpg"
-                    alt="Компьтер с открытой страницей веб-сайта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-6.jpg    1x,
+                        images/portfolio/portfolio-desktop-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-6.jpg    1x,
+                        images/portfolio/portfolio-tablet-6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-6.jpg    1x,
+                        images/portfolio/portfolio-mobile-6@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-6.jpg"
+                      alt="Компьтер с открытой страницей веб-сайта"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -244,12 +382,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster7.jpg"
-                    alt="Журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-7.jpg    1x,
+                        images/portfolio/portfolio-desktop-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-7.jpg    1x,
+                        images/portfolio/portfolio-tablet-7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-7.jpg    1x,
+                        images/portfolio/portfolio-mobile-7@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-7.jpg"
+                      alt="Журнал"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -269,12 +430,35 @@
             <li class="examples__list-item">
               <a href="# " class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster8.jpg"
-                    alt="Логотип проекта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-8.jpg    1x,
+                        images/portfolio/portfolio-desktop-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-8.jpg    1x,
+                        images/portfolio/portfolio-tablet-8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-8.jpg    1x,
+                        images/portfolio/portfolio-mobile-8@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-8.jpg"
+                      alt="Логотип проекта"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
@@ -294,12 +478,35 @@
             <li class="examples__list-item">
               <a href="#" class="examples__link">
                 <div class="examples__link-wrapper">
-                  <img
-                    src="images/portfolio/poster9.jpg"
-                    alt="Пользователь за работой с приложением"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-desktop-9.jpg    1x,
+                        images/portfolio/portfolio-desktop-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-tablet-9.jpg    1x,
+                        images/portfolio/portfolio-tablet-9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        images/portfolio/portfolio-mobile-9.jpg    1x,
+                        images/portfolio/portfolio-mobile-9@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="images/portfolio/portfolio-mobile-9.jpg"
+                      alt="Пользователь за работой с приложением"
+                    />
+                  </picture>
+
                   <div class="examples__link-overlay">
                     <p class="examples__link-text">
                       Технокряк это современная площадка распространения
