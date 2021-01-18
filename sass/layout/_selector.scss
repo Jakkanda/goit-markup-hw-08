@@ -1,9 +1,19 @@
 .selector__list {
   display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .selector__list > .selector__list-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and(max-width: 767px) {
+  .selector__list-item:nth-last-child(-n + 2) {
+    margin-top: 15px;
+  }
 }
 
 .selector__list-wrapper {
@@ -36,4 +46,3 @@
     background-color: var(--accent-color);
   }
 }
-

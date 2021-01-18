@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  margin-top: 30px; 
+  margin-top: 30px;
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -20,14 +20,13 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 90px) / 3);
   }
-
 }
 
 .clients__list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 3px;
@@ -37,6 +36,13 @@
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

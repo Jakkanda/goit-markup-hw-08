@@ -59,10 +59,7 @@
     align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
-    // display: flex;
-    // flex-wrap: wrap;
     justify-content: center;
-    // align-items: baseline;
   }
 }
 
@@ -112,6 +109,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     display: flex;
@@ -129,7 +130,7 @@
   display: block;
   margin-top: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 480px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -147,8 +148,19 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
-}
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+.footer__mail-field {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+}
 .footer__btn {
   margin-top: 20px;
   margin-left: auto;
@@ -164,12 +176,22 @@
 
 .footer__btn-wrapper {
   position: relative;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__icon-send {
   position: absolute;
   top: 34px;
   right: 28px;
+
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    top: 34px;
+    right: 33%;
+  }
 
   @media screen and(min-width: 1200px) {
   }
