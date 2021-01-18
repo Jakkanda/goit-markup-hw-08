@@ -57,12 +57,12 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -773,7 +773,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 3px;
@@ -782,18 +781,6 @@ img {
 
 .clients__list-link:hover, .clients__list-link:focus {
   border: 1px solid var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .clients__list-link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__list-link {
-    width: 170px;
-  }
 }
 
 .clients-logo {
