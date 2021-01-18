@@ -130,7 +130,7 @@
   display: block;
   margin-top: 20px;
   padding: 15px 16px;
-  width: 480px;
+  width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,11 +149,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     width: 358px;
   }
 }
@@ -191,8 +187,5 @@
   @media screen and(min-width: 768px) and (max-width: 1199px) {
     top: 34px;
     right: 33%;
-  }
-
-  @media screen and(min-width: 1200px) {
   }
 }
