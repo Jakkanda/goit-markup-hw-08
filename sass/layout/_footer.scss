@@ -130,7 +130,6 @@
   display: block;
   margin-top: 20px;
   padding: 15px 16px;
-  width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,14 +148,16 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
 }
-.footer__mail-field {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  }
-}
+
+
 .footer__btn {
   margin-top: 20px;
   margin-left: auto;
