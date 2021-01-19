@@ -42,14 +42,14 @@
     display: block;
   }
 
-  background-color: #fff;
-
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    
+    background-color: #fff;
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -57,7 +57,8 @@
 
   @media screen and (min-width: 768px) {
       display: flex;
-      
+      align-items: center;
+
   }
 }
 

@@ -6,7 +6,7 @@
   }
 
   & .logo {
-    margin-right: 93px;
+    // margin-right: 93px;
     margin-top: 16px;
   }
 
@@ -55,10 +55,13 @@
   align-items: center;
 }
 
-// .site-nav-list__item:not(:last-child),
-// .contact-list__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+@media screen and (min-width: 768px) {
+  .site-nav-list__item:not(:last-child),
+  .contact-list__item:not(:last-child) {
+    margin-right: 50px;
+    
+  }
+}
 
 .site-nav-list__item:not(:last-child) {
   margin-bottom: 40px;
@@ -84,8 +87,6 @@
 
 .site-nav__link {
   display: block;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 18px;
@@ -118,9 +119,16 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+      bottom: 0;
+    }
   }
 
   @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-size: 14px;
     line-height: 1.14;
   }
