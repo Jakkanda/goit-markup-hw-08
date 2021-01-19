@@ -7,6 +7,41 @@
 
   & .logo {
     margin-right: 93px;
+    margin-top: 16px;
+  }
+
+  border-bottom: 1px solid #ececec;
+  @media screen and(max-width: 767px) {
+    height: 60px;
+  }
+
+  @media screen and(min-width: 768px) {
+    height: 80px;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .site-nav-list,
+  .contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-nav-list__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .contact-list {
+    margin-top: 60px;
+  }
+
+  .contact-list__item {
+    display: block;
+    margin-bottom: 16px;
   }
 }
 
@@ -20,32 +55,41 @@
   align-items: center;
 }
 
-.site-nav-list__item:not(:last-child),
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
+// .site-nav-list__item:not(:last-child),
+// .contact-list__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+.site-nav-list__item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.38;
   letter-spacing: 0.03em;
   color: #000000;
 
   & > span {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .site-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 
@@ -67,7 +111,7 @@
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -8px;
 
     display: block;
     width: 100%;
@@ -75,13 +119,17 @@
     border-radius: 2px;
     background-color: var(--accent-color);
   }
-}
 
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .contact-list {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .contact-list__icon {
@@ -104,8 +152,8 @@
   align-items: center;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 
@@ -114,5 +162,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
