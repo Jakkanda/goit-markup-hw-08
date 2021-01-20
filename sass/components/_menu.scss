@@ -15,7 +15,7 @@
   }
 
   &:hover .icon-cross {
-      fill: var(--accent-color);
+    fill: var(--accent-color);
   }
 
   &.is-open .icon-menu {
@@ -23,7 +23,7 @@
   }
 
   &:hover .icon-menu {
-      fill: var(--accent-color);
+    fill: var(--accent-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -32,9 +32,8 @@
 }
 
 .menu-button__icon {
-    display: block;
-    margin-top: 10px;
-
+  display: block;
+  margin-top: 10px;
 }
 
 .menu-container {
@@ -48,7 +47,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    
+
     background-color: #fff;
 
     padding-top: 60px;
@@ -56,10 +55,8 @@
   }
 
   @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
 }
-
-
