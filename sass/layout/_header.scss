@@ -53,9 +53,9 @@
   display: flex;
   align-items: center;
 
-  @media screen and(min-width: 768px) {
-    margin-right: 60px;
-  }
+  // @media screen and(min-width: 768px) {
+  //   margin-right: 60px;
+  // }
 }
 
 .site-nav-list {
@@ -68,6 +68,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: auto;
+    justify-content: flex-end;
   }
 
   @media screen and (min-width: 1200px) {

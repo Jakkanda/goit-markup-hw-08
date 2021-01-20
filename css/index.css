@@ -52,6 +52,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .address {
@@ -538,12 +540,6 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav {
-    margin-right: 60px;
-  }
-}
-
 .site-nav-list {
   display: flex;
   align-items: center;
@@ -554,6 +550,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: auto;
+    justify-content: flex-end;
   }
 }
 
