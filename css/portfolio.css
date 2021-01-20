@@ -469,6 +469,7 @@ img {
     background-color: #fff;
     padding-top: 60px;
     padding-bottom: 60px;
+    z-index: 1;
   }
 }
 
