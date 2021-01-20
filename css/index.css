@@ -450,7 +450,6 @@ img {
 
 .menu-button__icon {
   display: block;
-  margin-top: 10px;
 }
 
 .menu-container.is-open {
@@ -486,7 +485,12 @@ img {
 
 .header .container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  height: 100%;
+}
+
+.header .logo {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -950,10 +954,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.team__photo {
-  width: 100%;
 }
 
 .clients__list {
