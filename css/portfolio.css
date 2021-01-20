@@ -496,6 +496,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 93px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     height: 60px;
@@ -832,6 +838,12 @@ img {
 .examples__description-wrapper {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .first-card {
+    padding-bottom: 55px;
+  }
 }
 
 .footer {
